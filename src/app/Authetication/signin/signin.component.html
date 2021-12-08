@@ -1,0 +1,20 @@
+
+<div class="container"> 
+    <div class="logo">
+        <img src="assets/logo.png" alt="" width="150px">
+    </div> 
+    <h2>Welcome user</h2>
+    <form [formGroup]="myReactiveForm" (ngSubmit)="onsubmit()">    
+         <div class="input_box">
+             <div><label >Email</label></div>    
+             <input type="email" placeholder="Email" class="input_data" formControlName="email">
+        </div> 
+         <div class="input_box">  
+             <div><label for="">Password</label></div> 
+            <input type="password" placeholder="Password" class="input_data" formControlName='password'>  
+         </div>        
+         <div class="text">  
+              <button (click)="login()" name="submit" class="btn" value="Signin">Signin </button> 
+         </div>
+    </form>  
+</div>  

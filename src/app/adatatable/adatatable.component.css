@@ -1,0 +1,17 @@
+table{
+    width: 1200px;
+    height: 400px;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 50px;
+}
+table thead tr th{
+    color:lightblue;
+}
+.container{
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+hr{
+    width: 100%;
+}
