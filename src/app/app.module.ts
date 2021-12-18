@@ -12,6 +12,9 @@ import { ToastrModule } from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { Routes,RouterModule } from '@angular/router';
+import { ClientDetailsComponent } from './dashboard/client-details/client-details.component';
+import { DataTablesModule } from 'angular-datatables';
+
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -24,11 +27,12 @@ const routes: Routes = [
     CardComponent,
     HomeComponent,
     DashboardComponent,
-    CreateClientComponent
+    CreateClientComponent,
+    ClientDetailsComponent
   ],
   imports: [
     BrowserModule,ReactiveFormsModule,FormsModule,ToastrModule.forRoot(),HttpClientModule,
-    BrowserAnimationsModule,BrowserModule,RouterModule.forRoot(routes)
+    BrowserAnimationsModule,BrowserModule,RouterModule.forRoot(routes),DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
